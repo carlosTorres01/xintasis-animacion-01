@@ -1,0 +1,350 @@
+body{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+// Personalizacion del coloreado de la seleccion del texto -----------------------------------
+body::selection{
+	color: default;	
+}
+
+// Menu de navegacion global ------------------------------------------------------------------
+header{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	& nav{
+		position: fixed;
+	    right: 0;
+	    top: 0;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		background: $gradientBrand;
+		margin-top: 20px;
+		margin-right: 25px;
+		border-radius: 100px 10px 100px 100px;
+		z-index: 3;
+		transition: .3s;
+		& ul{
+			list-style: none;
+			& li{
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.active{
+	top: 0;
+	right: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	border-radius: 0;
+	transition: .3s;
+}
+
+// Clases de asignacion de ancho y largo -----------------------------------------------------
+.auto-width-height{
+	height: auto;
+	width: auto;
+}
+
+.auto-100-width{
+	width: 100%;
+}
+
+.auto-75-width{
+	width: 75%;
+}
+
+.auto-50-width{
+	width: 50%;
+}
+
+.auto-25-width{
+	width: 25%;
+}
+
+.auto-100-eight{
+	height: 100%;
+}
+
+// Clases de alineado con FLEXBOX ------------------------------------------------------------
+.flex-center{
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-center{
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-end{
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.flex-start{
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.flex-justify-start{
+	justify-content: flex-start;
+}
+
+.flex-justify-center{
+	justify-content: center;
+}
+
+.flex-justify-end{
+	justify-content: flex-end;
+}
+
+.flex-align-start{
+	align-items: flex-start;
+}
+
+.flex-align-center{
+	align-items: center;
+}
+
+.flex-align-end{
+	align-items: flex-end;
+}
+
+.flex-direction-column{
+	flex-direction: column;
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+
+.evenly{
+	justify-content: space-evenly;
+}
+
+// Clases de asignacion de Display ------------------------------------------------------------
+
+.d-block{
+	display: block;
+}
+
+.d-inline{
+	display: inline-block;
+}
+
+.d-flex{
+	display: flex;
+}
+
+// Clases de asignacion de Margin ------------------------------------------------------------
+.m-0{
+	margin: 0;
+}
+
+.mt-0{
+	margin-top: 0;
+}
+
+.mb-0{
+	margin-bottom: 0;
+}
+
+.ml-0{
+	margin-left: 0;
+}
+
+.mr-0{
+	margin-right: 0;
+}
+
+.mt-1{
+	margin-top: 5px;
+}
+
+.mb-1{
+	margin-bottom: 5px;
+}
+
+.ml-1{
+	margin-left: 5px;
+}
+
+.mr-1{
+	margin-right: 5px;
+}
+
+.mt-2{
+	margin-top: 10px;
+}
+
+.mb-2{
+	margin-bottom: 10px;
+}
+
+.ml-2{
+	margin-left: 10px;
+}
+
+.mr-2{
+	margin-right: 10px;
+}
+
+.mt-3{
+	margin-top: 15px;
+}
+
+.mb-3{
+	margin-bottom: 15px;
+}
+
+.ml-3{
+	margin-left: 15px;
+}
+
+.mr-3{
+	margin-right: 15px;
+}
+
+.mt-4{
+	margin-top: 20px;
+}
+
+.mb-4{
+	margin-bottom: 20px;
+}
+
+.ml-4{
+	margin-left: 20px;
+}
+
+.mr-4{
+	margin-right: 20px;
+}
+
+.ml-vw-1{
+	margin-left: 5vw;
+}
+
+// Clases de asignacion de Margin ------------------------------------------------
+.p-0{
+	padding: 0;
+}
+
+.p-1{
+	padding: 5px;
+}
+
+.p-2{
+	padding: 10px;
+}
+
+.p-3{
+	padding: 15px;
+}
+
+.p-4{
+	padding: 20px;
+}
+
+.pt-0{
+	padding-top: 0;
+}
+
+.pb-0{
+	padding-bottom: 0;
+}
+
+.pl-0{
+	padding-left: 0;
+}
+
+.pr-0{
+	padding-right: 0;
+}
+
+.pt-1{
+	padding-top: 5px;
+}
+
+.pb-1{
+	padding-bottom: 5px;
+}
+
+.pl-1{
+	padding-left: 5px;
+}
+
+.pr-1{
+	padding-right: 5px;
+}
+
+.pt-2{
+	padding-top: 10px;
+}
+
+.pb-2{
+	padding-bottom: 10px;
+}
+
+.pl-2{
+	padding-left: 10px;
+}
+
+.pr-2{
+	padding-right: 10px;
+}
+
+.pt-3{
+	padding-top: 15px;
+}
+
+.pb-3{
+	padding-bottom: 15px;
+}
+
+.pl-3{
+	padding-left: 15px;
+}
+
+.pr-3{
+	padding-right: 15px;
+}
+
+.pt-4{
+	padding-top: 20px;
+}
+
+.pb-4{
+	padding-bottom: 20px;
+}
+
+.pl-4{
+	padding-left: 20px;
+}
+
+.pr-4{
+	padding-right: 20px;
+}
+
+.pl-vw-1{
+	padding-left: 5vw;
+}
+
+
+// Clases de Imagenes
+
+.objet-fit-cover{
+	object-fit: cover;
+}
+
+.objet-fit-contain{
+	object-fit: contain;
+}

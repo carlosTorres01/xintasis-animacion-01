@@ -1,0 +1,144 @@
+// Importacion de la fuente kodchasan con todas sus variaciones --------------------------------------------------------
+@font-face {
+    font-family: 'kodchasanbold';
+    src: url('../fonts/kodchasan-bold-webfont.woff2') format('woff2'),
+         url('../fonts/kodchasan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'kodchasanitalic';
+    src: url('../fonts/kodchasan-italic-webfont.woff2') format('woff2'),
+         url('../fonts/kodchasan-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kodchasan_lightregular';
+    src: url('../fonts/kodchasan-light-webfont.woff2') format('woff2'),
+         url('../fonts/kodchasan-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kodchasan_mediumregular';
+    src: url('../fonts/kodchasan-medium-webfont.woff2') format('woff2'),
+         url('../fonts/kodchasan-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kodchasanregular';
+    src: url('../fonts/kodchasan-regular-webfont.woff2') format('woff2'),
+         url('../fonts/kodchasan-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// Mapa de fuentes ------------------------------------------------------------------------------------------
+$font_type: (
+	k_light: 'kodchasan_lightregular',
+	k_medium: 'kodchasan_mediumregular',
+	k_regular: 'kodchasanregular',
+	k_italic: 'kodchasanitalic',
+	k_bold: kodchasanbold,
+);
+
+
+// Declaracion de las fuentes -------------------------------------------------------------------------------
+body{
+    font-family: map-get($font_type, k_regular), system-ui;
+}
+
+// Clases de declaracion de fuentes
+.font-light{
+    font-family: map-get($font_type, k_light);
+}
+
+.font-medium{
+    font-family: map-get($font_type, k_medium);
+}
+
+.font-italic{
+    font-family: map-get($font_type, k_italic);
+}
+
+.font-bold{
+    font-family: map-get($font_type, k_bold);
+}
+
+
+// Clases de tamaño default de las etiquetas h1, h2, h3, h4, h5 ------------------------------------------------
+.h1{
+    font-size: 2rem;
+}
+
+.h2{
+    font-size: 1.5rem;
+}
+
+.h3{
+    font-size: 1.17rem;
+}
+
+.h4{
+    font-size: 1rem;
+}
+
+.h5{
+    font-size: 0.83rem;
+}
+
+.h6{
+    font-size: 0.67rem;
+}
+
+// Clases de tamaños display -----------------------------------------------------------------------------------
+.display-1{
+    font-size: 3rem;
+}
+
+.display-2{
+    font-size: 6rem;
+}
+
+.display-3{
+    font-size: 8rem;
+}
+
+.display-4{
+    font-size: 10rem;
+}
+
+
+// Clases de transformacion de texto ----------------------------------------------------------------------------
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-lowercase{
+    text-transform: lowercase;
+}
+
+
+// Clases de alineacion de texto --------------------------------------------------------------------------------
+.text-center{
+    text-align: center;
+}
+
+
+// Clases de asignacion de propiedades para Hipervinculos (links) ------------------------------------------------
+.link-none{
+    text-decoration: none;
+    color: default;
+}

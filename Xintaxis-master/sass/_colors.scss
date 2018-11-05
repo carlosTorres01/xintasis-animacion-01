@@ -1,0 +1,30 @@
+$colorBrandPink: #ff0aa5;
+$colorBrandOrange: #ff6207;
+$gradientBrand: linear-gradient(to bottom, rgba(255,10,165,1) 0%, rgba(255,98,7,1) 100%);
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+$colorMuted: #2d3436;
+
+.color-white{
+	color: $colorWhite;
+}
+
+.color-black{
+	color: $colorBlack;
+}
+
+.color-muted{
+	color: $colorMuted;
+}
+
+.color-gradient{
+	color: $gradientBrand;
+}
+
+.color-brand-pink{
+	color: $colorBrandPink;
+}
+
+.color-brand-orange{
+	color: $colorBrandOrange;
+}
